@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Desktop_Data_Capturing" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="797.6,3824" sap2010:WorkflowViewState.IdRef="Desktop_Data_Capturing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Desktop_Data_Capturing" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="797.6,3926.4" sap2010:WorkflowViewState.IdRef="Desktop_Data_Capturing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="56">
       <x:String>System.Activities</x:String>
@@ -70,7 +70,7 @@
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Desktop_Data_Capturing" sap:VirtualizedContainerService.HintSize="700.8,3759.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Desktop_Data_Capturing" sap:VirtualizedContainerService.HintSize="700.8,3861.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="strCountData" />
     </Sequence.Variables>
@@ -131,13 +131,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'mycrm.exe My'" FileName="C:\Users\lenovo\Desktop\UIpath\RPA CRM Sample Data Capturing\mycrm.exe" sap:VirtualizedContainerService.HintSize="659.2,3271.2" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="12c884180a4698f18e8c18759f1b1d22" Selector="&lt;wnd app='mycrm.exe' ctrlname='Form1' /&gt;">
+    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'mycrm.exe My'" FileName="C:\Users\lenovo\Desktop\UIpath\RPA CRM Sample Data Capturing\mycrm.exe" sap:VirtualizedContainerService.HintSize="659.2,3373.6" sap2010:WorkflowViewState.IdRef="OpenApplication_1" InformativeScreenshot="12c884180a4698f18e8c18759f1b1d22" Selector="&lt;wnd app='mycrm.exe' ctrlname='Form1' /&gt;">
       <ui:OpenApplication.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="625.6,3124" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="625.6,3226.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -155,6 +155,7 @@
                 </ui:Target>
               </ui:TypeInto.Target>
             </ui:TypeInto>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="584,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="Kamal" />
             <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'combo box  State:'" sap:VirtualizedContainerService.HintSize="584,135.2" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="NY">
               <ui:SelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="50">
